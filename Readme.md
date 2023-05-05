@@ -7,6 +7,6 @@ Api de teste para connectar com bd postgres num docker usando sequelize
 ## Como executar
 
 ```
-  docker-compose up -d && npm run dev
+  npm install && docker-compose up -d && npm run dev
 
 ```

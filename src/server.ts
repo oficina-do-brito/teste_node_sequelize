@@ -9,7 +9,9 @@ app.use(express.json());
 
 try {
   const connected = connection.authenticate();
-  console.log(`Connection has been established successfully.${connected} devolvida esta connectando`);
+  console.log(
+    `Connection has been established successfully.${connected} devolvida esta connectando`
+  );
 } catch (error) {
   console.error("Unable to connect to the database:", error);
 }
