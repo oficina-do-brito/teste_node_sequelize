@@ -1,3 +1,4 @@
+import sequelize from "sequelize";
 import { Sequelize } from "sequelize";
 
 //                              database', 'username', 'password',

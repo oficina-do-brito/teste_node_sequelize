@@ -2,10 +2,8 @@ import express from "express";
 import cors from "cors";
 import routes from "./routes";
 import connection from "./config";
-// models
-import Produto from "./modules/Produto/model";
-import Usuario from "./modules/Usuario/model";
-import Estoque from "./modules/Estoque/model";
+
+//models
 
 const app = express();
 app.use(cors());
@@ -18,7 +16,7 @@ try {
       `Connection has been established successfully. "${connected}" `
     );
     async () => {
-      await connection.sync({ force: true });
+      await connection.sync();
     };
   }
 } catch (error) {
